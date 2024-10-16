@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Simple JavaScript Calculator with Memory and Unit Testing",
   "scripts": {
-    "test": "mocha ./tests/calculator.test.js"
+    "test": "mocha ./tests/calculator.test.js",
+    "start": "http-server -p 3000 -o index.html"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "jsdom": "^25.0.1"
   },
   "devDependencies": {

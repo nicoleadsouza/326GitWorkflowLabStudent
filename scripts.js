@@ -48,5 +48,28 @@ function runReciprocal() {
 }
 
 // TODO: Implement run your functions here
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+    if (!isNaN(key) || ['+', '-', '*', '/', '.'].includes(key)) {
+    }
+
+    if (key === 'Enter') {
+        event.preventDefault();  
+        calculateResult();
+    }
+    
+    if (key === 'Backspace') {
+        deleteLast();
+        event.preventDefault(); 
+    }
+
+    if (key === 'Escape') {
+        clearDisplay();
+    }
+});
+
+document.getElementById('display').addEventListener('input', function(event) {
+    this.value = this.value.replace(/[^0-9+\-*/.]/g, '');
+});
 
 
