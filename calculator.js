@@ -8,7 +8,7 @@ function calculateSquareRoot(value) {
 
 // TODO: Implement square function
 function calculateSquare(value) {
-    return value * value
+    return value * value;
 
 }
 
@@ -37,6 +37,7 @@ function cosine(value) {
 
 // TODO: Implement tangent function
 function tangent(value) {
+    return Math.tan(value);
     // return the tangent of the value
 }
 
