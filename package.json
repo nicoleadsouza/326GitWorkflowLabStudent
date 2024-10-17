@@ -1,0 +1,15 @@
+{
+  "name": "calculator-project",
+  "version": "1.0.0",
+  "description": "Simple JavaScript Calculator with Memory and Unit Testing",
+  "scripts": {
+    "test": "mocha ./tests/calculator.test.js"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^9.0.0"
+  }
+}
